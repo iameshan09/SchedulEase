@@ -69,3 +69,4 @@ The app should be built using the PERN stack and meet the following requirements
 ### **Timeline**:
 
 - The candidate has **3 days** to complete and submit the project.
+# SchedulEase
