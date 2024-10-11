@@ -88,18 +88,20 @@ function SignIn() {
             SignIn
           </Typography>
         </Box>
-        <Stack gap={30}>
-          <TextField
-            id="username"
-            label="Username"
-            size="small"
-            value={formik.values.username}
-            onChange={_handleUsernameChange}
-            error={!!formik.errors.username}
-            helperText={formik.errors.username}
-            fullWidth
-          />
-          <Stack gap={5} width="100%">
+        <Stack gap={3}>
+          <Box height={64}>
+            <TextField
+              id="username"
+              label="Username"
+              size="small"
+              value={formik.values.username}
+              onChange={_handleUsernameChange}
+              error={!!formik.errors.username}
+              helperText={formik.errors.username}
+              fullWidth
+            />
+          </Box>
+          <Box height={64}>
             <PasswordField
               id="password"
               label="Password"
@@ -109,7 +111,7 @@ function SignIn() {
               onChange={_handlePasswordChange}
               fullWidth
             />
-          </Stack>
+          </Box>
           <Button type="submit" variant="contained" color="primary">
             LOGIN
           </Button>

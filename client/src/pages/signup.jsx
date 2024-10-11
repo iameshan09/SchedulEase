@@ -91,35 +91,41 @@ function SignUp() {
             SignIn
           </Typography>
         </Box>
-        <Stack gap={30}>
-          <TextField
-            id="username"
-            label="Username"
-            size="small"
-            value={formik.values.username}
-            onChange={_handleUsernameChange}
-            error={!!formik.errors.username}
-            helperText={formik.errors.username}
-            fullWidth
-          />
-          <PasswordField
-            id="password"
-            label="Password"
-            value={formik.values.password}
-            error={!!formik.errors.password}
-            helperText={formik.errors.password}
-            onChange={_handlePasswordChange}
-            fullWidth
-          />
-          <PasswordField
-            id="cPass"
-            label="Confirm password"
-            value={formik.values.cPass}
-            error={!!formik.errors.cPass}
-            helperText={formik.errors.cPass}
-            onChange={_handleCpassChange}
-            fullWidth
-          />
+        <Stack gap={3}>
+          <Box height={64}>
+            <TextField
+              id="username"
+              label="Username"
+              size="small"
+              value={formik.values.username}
+              onChange={_handleUsernameChange}
+              error={!!formik.errors.username}
+              helperText={formik.errors.username}
+              fullWidth
+            />
+          </Box>
+          <Box height={64}>
+            <PasswordField
+              id="password"
+              label="Password"
+              value={formik.values.password}
+              error={!!formik.errors.password}
+              helperText={formik.errors.password}
+              onChange={_handlePasswordChange}
+              fullWidth
+            />
+          </Box>
+          <Box height={64}>
+            <PasswordField
+              id="cPass"
+              label="Confirm password"
+              value={formik.values.cPass}
+              error={!!formik.errors.cPass}
+              helperText={formik.errors.cPass}
+              onChange={_handleCpassChange}
+              fullWidth
+            />
+          </Box>
           <Button type="submit" variant="contained" color="primary">
             SIGN UP
           </Button>
