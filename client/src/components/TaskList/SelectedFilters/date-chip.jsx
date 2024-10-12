@@ -6,7 +6,6 @@ const DateChip = ({ dueDate, setDueDate }) => {
   const removeDate = () => {
     setDueDate("");
   };
-  console.log("DateChip", dueDate?.$d);
 
   return (
     <Chip

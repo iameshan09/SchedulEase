@@ -91,7 +91,7 @@ function TaskCard({ data, _handleUpdateOpen, _handleDeleteOpen }) {
                 </IconButton>
               </Box>
               <Typography color="#a2a2a2" fontSize={18}>
-                {format(data?.dueDate, "MMM, DD YYYY")}
+                {format(data?.due_date, "MMM, DD YYYY")}
               </Typography>
             </Stack>
           </Box>
