@@ -59,11 +59,12 @@ function SignIn() {
       height="100vh"
       bgcolor="space"
       gap={30}
+      p={{ xs: 10, sm: 30 }}
     >
       <Logo width={40} />
       <Stack
         component="form"
-        width={{ sm: 530, xs: 275 }}
+        width={{ xs: "100%", sm: 530 }}
         height={453}
         justifyContent="center"
         bgcolor="white"
@@ -85,7 +86,7 @@ function SignIn() {
       >
         <Box textAlign="center">
           <Typography fontWeight={500} fontSize="1.5em">
-            SignIn
+            Sign In
           </Typography>
         </Box>
         <Stack gap={3}>
@@ -116,7 +117,7 @@ function SignIn() {
             LOGIN
           </Button>
         </Stack>
-        <Box display={{ xs: "none", sm: "block" }} textAlign="center" mt={15}>
+        <Box textAlign="center" mt={15}>
           <Typography fontSize={14}>
             Don&apos;t have an account?&nbsp;
             <Link to="signup">Sign up</Link>
