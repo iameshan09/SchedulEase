@@ -89,6 +89,8 @@ function UpdateTaskDialog({ open, setOpen, setRefetchId, task, setTask }) {
       PaperProps={{
         sx: {
           borderRadius: 4,
+          margin: 0,
+          width: { xs: "calc(100% - 20px)", sm: "auto" },
         },
       }}
     >
@@ -96,7 +98,7 @@ function UpdateTaskDialog({ open, setOpen, setRefetchId, task, setTask }) {
         bgcolor="white"
         p={30}
         gap={30}
-        width={{ sm: 395, xs: 275 }}
+        width={{ xs: "100%", sm: 395 }}
         component="form"
         onSubmit={formik.handleSubmit}
       >

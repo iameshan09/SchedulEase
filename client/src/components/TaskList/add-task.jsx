@@ -78,8 +78,10 @@ function AddTaskDialog({ open, setOpen, setRefetchId }) {
     <Dialog
       open={open}
       PaperProps={{
-        style: {
+        sx: {
           borderRadius: 4,
+          margin: 0,
+          width: { xs: "calc(100% - 20px)", sm: "auto" },
         },
       }}
     >
@@ -87,7 +89,7 @@ function AddTaskDialog({ open, setOpen, setRefetchId }) {
         bgcolor="white"
         p={30}
         gap={30}
-        width={{ sm: 395, xs: 275 }}
+        width={{ xs: "100%", sm: 395 }}
         overflow="hidden"
         component="form"
         onSubmit={formik.handleSubmit}

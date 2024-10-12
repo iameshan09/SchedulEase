@@ -41,7 +41,7 @@ function FilterPane({ setPriority, setDueDate }) {
         columnSpacing={30}
         rowSpacing={20}
         py={20}
-        px={40}
+        px={{ xs: 10, sm: 40 }}
       >
         <Grid item xs={12} md={6} lg={4}>
           <PrioritySelector

@@ -40,7 +40,16 @@ function DeleteTaskDialog({ open, setOpen, task, setTask, setRefetchId }) {
   };
 
   return (
-    <Dialog open={open} PaperProps={{ style: { borderRadius: 4 } }}>
+    <Dialog
+      open={open}
+      PaperProps={{
+        sx: {
+          borderRadius: 4,
+          width: { xs: "calc(100% - 20px)", sm: "auto" },
+          margin: 0,
+        },
+      }}
+    >
       <Box
         display="flex"
         flexDirection="column"
